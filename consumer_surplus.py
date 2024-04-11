@@ -1,5 +1,3 @@
-from tkinter import *
-
 def calculate_consumer_surplus(price, quantity, price_when_q_0):
   """
   Calculates the consumer surplus based on price, quantity, and price at Q=0.
