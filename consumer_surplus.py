@@ -52,36 +52,3 @@ def calculate_and_display():
     # All inputs valid, proceed with calculation
     consumer_surplus = calculate_consumer_surplus(price, quantity, price_when_q_0)
     print_result(consumer_surplus)
-
-# Create the main window
-window = Tk()
-window.title("Consumer Surplus Calculator")
-
-# Labels
-price_label = Label(window, text="Equilibrium Price:")
-quantity_label = Label(window, text="Equilibrium Quantity:")
-price_q0_label = Label(window, text="Price at Q=0:")
-result_label = Label(window, text="")
-
-# Entry fields
-price_entry = Entry(window)
-quantity_entry = Entry(window)
-price_q0_entry = Entry(window)
-
-# Button
-calculate_button = Button(window, text="Calculate", command=calculate_and_display)
-
-# Layout the widgets
-price_label.grid(row=0, column=0)
-quantity_label.grid(row=1, column=0)
-price_q0_label.grid(row=2, column=0)
-result_label.grid(row=3, columnspan=2)
-
-price_entry.grid(row=0, column=1)
-quantity_entry.grid(row=1, column=1)
-price_q0_entry.grid(row=2, column=1)
-
-calculate_button.grid(row=4, columnspan=2)
-
-# Run the main loop
-window.mainloop()
